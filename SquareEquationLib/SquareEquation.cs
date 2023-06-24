@@ -4,8 +4,9 @@ public class SquareEquation
 {
     public static double[] Solve(double a, double b, double c)
     {
-        double x1,x2;
-       double[] array = new double[2];
+        double x1;
+        double x2;
+        double[] array = new double[2];
         double eps = 1e-9;
         double d = b * b - 4 * a * c;
         if (-eps < a && a < eps)
