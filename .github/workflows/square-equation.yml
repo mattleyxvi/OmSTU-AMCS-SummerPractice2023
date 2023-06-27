@@ -20,15 +20,12 @@ jobs:
         run: dotnet restore SquareEquationLib
 
       - name: Build
-        run: dotnet build SquareEquationLib --no-restore /p:ContinuousIntegrationBuild=true
+        run: dotnet build SquareEquationLib/ --no-restore /p:ContinuousIntegrationBuild=true
 
       - name: Test
         run: ./SquareEquationTest ./SquareEquationLib/bin/Debug/net7.0/SquareEquationLib.dll
 
       - name: Coverage
-        run: dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura
+        run: dotnet test /p:CollectCoverage=true /p:ThresholdType=line /p:Threshold=100
         
-      - name: Codecov
-        uses: codecov/codecov-action@v3
-        with: 
-          token: abe31d6b-353c-4991-9774-0621c04e736f
+
