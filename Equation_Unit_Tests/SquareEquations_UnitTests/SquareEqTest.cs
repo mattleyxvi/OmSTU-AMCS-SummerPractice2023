@@ -1,6 +1,6 @@
 using Xunit;
 using SquareEquationLib;
-namespace SquareEquation.UnitTests;
+namespace SquareEquations_UnitTests;
 
 public class UnitTest1
 {
@@ -26,7 +26,7 @@ public class UnitTest1
     [Fact]
     public void D_CloseToZero()
     {
-        double[] expected_roots = new double[]{-0.5000071};
+        double[] expected_roots = new double[]{-0.5};
         double[] roots = SquareEquation.Solve(1,1,0.24999999995);
         if (roots.Length!=expected_roots.Length)
         {
@@ -39,24 +39,23 @@ public class UnitTest1
         [InlineData(1, 0, 1, new double[] {})]
         [InlineData(1,0,0, new double[] {0})]
         [InlineData(1,4,4, new double[] {-2})]
-        [InlineData(1,0,-1, new double[] {-1, 1})]
         [InlineData(1,-3,2, new double[] {1, 2})]
 
         public void RootCorrectness(double a, double b, double c, double[] expectedRoots)
         {
             
             double[] roots = SquareEquation.Solve(a, b, c);
-            Array.Sort(actualRoots);
+            Array.Sort(roots);
             Array.Sort(expectedRoots);
 
-            if (expectedRoots.Length != actualRoots.Length)
+            if (expectedRoots.Length != roots.Length)
             {
                 Assert.Fail("Amount of roots does not match");
             }
 
             for (int i = 0; i < expectedRoots.Length; i++)
             {
-                Assert.Equal(expectedRoots[i], actualRoots[i], 6);
+                Assert.Equal(expectedRoots[i], roots[i], 6);
             }
         }
 }

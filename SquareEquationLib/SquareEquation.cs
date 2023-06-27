@@ -12,7 +12,7 @@ public class SquareEquation
         {
             throw new System.ArgumentException();
         }
-        if (a == 0 || new[] { a, b, c }.Any(double.IsNaN) || new[] { a, b, c }.Any(double.IsInfinity))
+        if ( new[] { a, b, c }.Any(double.IsNaN) || new[] { a, b, c }.Any(double.IsInfinity))
         {
             throw new ArgumentException("Ошибка");
         }
