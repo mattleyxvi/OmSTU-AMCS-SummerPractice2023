@@ -1,8 +1,8 @@
-name: square equation unit test
+name: unit_test
 
 on:
   push:
-    branches: ["square_equation_unittest"]
+    branches: ["unit_test"]
 
 jobs:
   build:
