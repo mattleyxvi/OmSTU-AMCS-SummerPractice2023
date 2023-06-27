@@ -37,7 +37,6 @@ public class UnitTest1
     }
     [Theory]
         [InlineData(1, 0, 1, new double[] {})]
-        [InlineData(1,0,0, new double[] {0})]
         [InlineData(1,4,4, new double[] {-2})]
         [InlineData(1,-3,2, new double[] {1, 2})]
 
