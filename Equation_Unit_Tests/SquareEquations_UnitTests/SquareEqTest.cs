@@ -9,6 +9,18 @@ public class UnitTest1
     {
         Assert.Throws<ArgumentException>(() => SquareEquation.Solve(0, 0, 0));
     }
+        [Fact]
+    public void D_CloseToZero()
+    {
+        double[] expected_roots = new double[]{-0.5};
+        double[] roots = SquareEquation.Solve(1,1,0.24999999995);
+        if (roots.Length!=expected_roots.Length)
+        {
+            Assert.Fail("Amount of roots does not match");
+        }
+        Assert.Equal(roots[0],expected_roots[0]);
+
+    }
     [Theory]
     [InlineData(double.NaN,1,1)]
     [InlineData(1,double.NaN,1)]
@@ -23,18 +35,7 @@ public class UnitTest1
     {
         Assert.Throws<ArgumentException>(() => SquareEquation.Solve(a, b, c));
     }
-    [Fact]
-    public void D_CloseToZero()
-    {
-        double[] expected_roots = new double[]{-0.5};
-        double[] roots = SquareEquation.Solve(1,1,0.24999999995);
-        if (roots.Length!=expected_roots.Length)
-        {
-            Assert.Fail("Amount of roots does not match");
-        }
-        Assert.Equal(roots[0],expected_roots[0]);
 
-    }
     [Theory]
         [InlineData(1, 0, 1, new double[] {})]
         [InlineData(1,4,4, new double[] {-2})]
