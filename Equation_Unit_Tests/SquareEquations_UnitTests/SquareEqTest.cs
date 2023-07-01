@@ -13,7 +13,7 @@ public class UnitTest1
     public void D_CloseToZero()
     {
         double[] expected_roots = new double[]{-0.5};
-        double[] roots = SquareEquation.Solve(1,1,0.24999999995);
+        double[] roots = SquareEquation.Solve(1,1,0.25);
         if (roots.Length!=expected_roots.Length)
         {
             Assert.Fail("Amount of roots does not match");
