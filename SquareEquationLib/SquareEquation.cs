@@ -25,7 +25,7 @@ public class SquareEquation
             x1 = -b/(2*a);
             array = new double[] { x1 };
         }
-        else 
+        else if (d>=eps)
         {
             x1 = (2*c)/-(b+Math.Sign(b)*Math.Sqrt(d));
             x2 = c / (a*x1);
