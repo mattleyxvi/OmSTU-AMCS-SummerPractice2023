@@ -55,7 +55,7 @@ public class UnitTest1
 
             for (int i = 0; i < expectedRoots.Length; i++)
             {
-                Assert.Equal(expectedRoots[i], roots[i], 6);
+                Assert.Equal(expectedRoots[i], roots[i]);
             }
         }
 }
