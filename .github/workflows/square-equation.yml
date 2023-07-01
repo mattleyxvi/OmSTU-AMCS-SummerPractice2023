@@ -27,8 +27,5 @@ jobs:
 
       - name: Coverage
         run: dotnet test /p:CollectCoverage=true /p:ThresholdType=line /p:Threshold=100
-      - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v3
-        with: 
-          token: bccbf99f-fb8f-43bd-9a1d-9e247bde12d1
+
 
