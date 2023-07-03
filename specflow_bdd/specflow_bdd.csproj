@@ -26,4 +26,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SquareEquationLib\SquareEquationLib.csproj" />
+  </ItemGroup>
+
 </Project>
