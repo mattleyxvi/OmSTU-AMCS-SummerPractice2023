@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spaceship.Tests", "Spaceship.Tests\Spaceship.Tests.csproj", "{7BA8F450-ED6A-4285-B6CD-D63BA3FD4A5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spaceship", "Spaceship\Spaceship.csproj", "{999D9E4B-7217-46D1-A84E-159FB3539C2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BA8F450-ED6A-4285-B6CD-D63BA3FD4A5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BA8F450-ED6A-4285-B6CD-D63BA3FD4A5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BA8F450-ED6A-4285-B6CD-D63BA3FD4A5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BA8F450-ED6A-4285-B6CD-D63BA3FD4A5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{999D9E4B-7217-46D1-A84E-159FB3539C2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{999D9E4B-7217-46D1-A84E-159FB3539C2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{999D9E4B-7217-46D1-A84E-159FB3539C2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{999D9E4B-7217-46D1-A84E-159FB3539C2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
