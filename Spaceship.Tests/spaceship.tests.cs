@@ -1,9 +1,9 @@
 namespace SpaceshipTests;
 using TechTalk.SpecFlow;
-using SpaceWarLib;
+using Spaceship;
 
 [Binding]
-public class StepDefinitions
+public class Spaceship_Tests
 {
     public double[] spaceShipCordinates = new double[]{double.NaN, double.NaN};
     public double[] spaceShipSpeed = new double[]{double.NaN, double.NaN};
@@ -40,7 +40,7 @@ public class StepDefinitions
     [When(@"^происходит прямолинейное равномерное движение без деформации")]
     public void ДвижениеКорабля(){
         try{
-            actual = SpaceMove.Movement(spaceShipCordinates, spaceShipSpeed, oportunity);
+            actual = Spaceship.Movement(spaceShipCordinates, spaceShipSpeed, oportunity);
         }
         catch(Exception e){
             actualException = e;

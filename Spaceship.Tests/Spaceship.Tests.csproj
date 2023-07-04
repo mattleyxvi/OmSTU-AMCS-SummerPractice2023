@@ -26,4 +26,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Spaceship\Spaceship.csproj" />
+  </ItemGroup>
+
 </Project>
