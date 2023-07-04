@@ -3,7 +3,7 @@ name: square equation test
 
 on:
   push:
-    branches: ["spaceship1"]
+    branches: ["spaceship2"]
 
 jobs:
   build:
